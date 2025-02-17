@@ -1,4 +1,4 @@
-name: Test actions/setup-python
+name: Test actions/python_setup
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: percebus/github-actions-common/.github/actions/checkout@main
 
-      - uses: ./.github/actions/setup-python
+      - uses: ./.github/actions/python_setup
 
   matrix:
     needs: default
@@ -40,7 +40,7 @@ jobs:
     steps:
       - uses: percebus/github-actions-common/.github/actions/checkout@main
 
-      - uses: ./.github/actions/setup-python
+      - uses: ./.github/actions/python_setup
         with:
           python-version-file: ./assets/python-version-file/v${{ matrix.python-version }}/.python-version
           architecture: ${{ matrix.architecture }}

@@ -6,7 +6,13 @@ inputs:
   python-version-file:
     description: Python version to install
     required: false
-    default: .python-version
+    default: "" # auto-detect
+
+  # ONLY use to override python-version-file (i.e. future-proof)
+  python-version:
+    description: Python version to install
+    required: false
+    default: ""
 
   architecture:
     description: Architecture to install python
@@ -21,3 +27,4 @@ runs:
       with:
         architecture: ${{ inputs.architecture }}
         python-version-file: ${{ inputs.python-version-file }}
+        python-version: ${{ inputs.python-version }}
