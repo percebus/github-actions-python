@@ -31,7 +31,6 @@ jobs:
 
         architecture:
           - x64
-          - x86
 
         OS:
           - ubuntu-latest
