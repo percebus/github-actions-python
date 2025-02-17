@@ -27,7 +27,7 @@ jobs:
           - "3.11"
           - "3.12"
           - "3.13"
-          - "3.14"
+          # - "3.14" # TODO: Uncomment when available
 
         architecture:
           - x64
@@ -43,5 +43,5 @@ jobs:
 
       - uses: ./.github/actions/setup-python
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version-file: v${{ matrix.python-version }}/.python-version
           architecture: ${{ matrix.architecture }}

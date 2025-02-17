@@ -3,10 +3,10 @@ description: Install & setup python
 
 inputs:
   # SEE: https://devguide.python.org/versions/
-  python-version:
+  python-versionf-file:
     description: Python version to install
     required: false
-    default: "3.13"
+    default: .python-version
 
   architecture:
     description: Architecture to install python
@@ -20,4 +20,4 @@ runs:
       uses: actions/setup-python@v5
       with:
         architecture: ${{ inputs.architecture }}
-        python-version: ${{ inputs.python-version }}
+        python-version-file: ${{ inputs.python-version-file }}
