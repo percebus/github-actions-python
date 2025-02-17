@@ -22,7 +22,6 @@ jobs:
       max-parallel: 6
       matrix:
         python-version:
-          - "" # default latest
           - "3.10"
           - "3.11"
           - "3.12"
