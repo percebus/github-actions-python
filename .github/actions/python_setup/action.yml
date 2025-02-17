@@ -17,7 +17,7 @@ runs:
   using: composite
   steps:
     - name: python @ ${{ inputs.python-version }}
-      uses: actions/setup-python@v5
+      uses: actions/python_setup@v5
       with:
         architecture: ${{ inputs.architecture }}
         python-version-file: ${{ inputs.python-version-file }}
