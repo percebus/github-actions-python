@@ -42,5 +42,5 @@ jobs:
 
       - uses: ./.github/actions/setup-python
         with:
-          python-version-file: v${{ matrix.python-version }}/.python-version
+          python-version-file: assets/python-version-file/v${{ matrix.python-version }}/.python-version
           architecture: ${{ matrix.architecture }}
