@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/percebus/github-actions-python/issues"
   },
-  "homepage": "https://github.com/percebus/github-actions-python#readme"
+  "homepage": "https://github.com/percebus/github-actions-python#readme",
+  "devDependencies": {
+    "prettier": "^3.5.1"
+  }
 }
