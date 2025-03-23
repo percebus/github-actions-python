@@ -1,5 +1,5 @@
-name: Setup python
-description: Install & setup python
+name: setup-ptyhon
+description: setup python
 
 inputs:
   # SEE: https://devguide.python.org/versions/
