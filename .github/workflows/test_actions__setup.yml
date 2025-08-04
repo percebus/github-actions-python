@@ -27,7 +27,7 @@ jobs:
           - "3.10"
           - "3.11"
           - "3.12"
-          - "3.13"
+          # - "3.13" # Already tested from .python-version file
           # - "3.14" # TODO: Uncomment when available
 
         architecture:
