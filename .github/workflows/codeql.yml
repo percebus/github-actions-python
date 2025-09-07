@@ -26,6 +26,7 @@ jobs:
       matrix:
         language:
           - actions
+          - javascript
           # - python  # TODO?
 
     name: "CodeQL: ${{ matrix.language }}"
