@@ -1,5 +1,6 @@
 name: CodeQL
 
+# SRC: https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning
 on:
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
   push:
