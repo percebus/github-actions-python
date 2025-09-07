@@ -7,7 +7,7 @@ on:
   pull_request:
     branches: [main]
   schedule:
-    - cron: '0 0 * * 0'  # Weekly on Sundays at midnight
+    - cron: "0 0 * * 0" # Weekly on Sundays at midnight
 
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
