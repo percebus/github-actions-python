@@ -28,7 +28,7 @@ jobs:
           - "3.11.x"
           - "3.12.x"
           # - "3.13.x" # Already tested from .python-version file
-          # - "3.14.x" # TODO: Uncomment when available
+          - "3.14.x"
 
         architecture:
           - x64
