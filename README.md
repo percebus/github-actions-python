@@ -10,6 +10,7 @@ github re-usable actions &amp; workflows for python
 
 ### Actions
 
-| action                              | test                                                                                                                                                                                                                        |
-| ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`setup`](./.github/actions/setup/) | [![Test actions/setup](https://github.com/percebus/github-actions-python/actions/workflows/test_actions__setup.yml/badge.svg)](https://github.com/percebus/github-actions-python/actions/workflows/test_actions__setup.yml) |
+| action                                                    | test                                                                                                                                                                                                                        |
+| --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`setup`](./.github/actions/setup/)                       | [![Test actions/setup](https://github.com/percebus/github-actions-python/actions/workflows/test_actions__setup.yml/badge.svg)](https://github.com/percebus/github-actions-python/actions/workflows/test_actions__setup.yml) |
+| [`semantic-release`](./.github/actions/semantic-release/) | TBD                                                                                                                                                                                                                         |

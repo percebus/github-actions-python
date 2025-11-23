@@ -9,7 +9,13 @@ concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 jobs:
+  semantic-pull-request:
+    uses: percebus/github-actions-compliance/.github/workflows/semantic-pull-request.yml@main
+
   audit:
     uses: percebus/github-actions-npm/.github/workflows/dependency-review.yml@main
     permissions:
