@@ -36,18 +36,18 @@ runs:
       # Adjust tag with desired version if applicable.
       uses: python-semantic-release/python-semantic-release@v10.5.2
       with:
-        verbosity: ${{ input.verbosity }}
-        config_file: ${{ input.config_file }}
-        github_token: ${{ input.github_token }}
+        verbosity: ${{ inputs.verbosity }}
+        config_file: ${{ inputs.config_file }}
+        github_token: ${{ inputs.github_token }}
         # TODO move to releaserc.toml
-        git_committer_name: ${{ input.git_committer_name }}
-        git_committer_email: ${{ input.git_committer_email }}
+        git_committer_name: ${{ inputs.git_committer_name }}
+        git_committer_email: ${{ inputs.git_committer_email }}
 
     - name: semantic-release publish
       uses: python-semantic-release/publish-action@v10.5.2
       if: steps.semantic-release-version.outputs.released == 'true'
       with:
-        verbosity: ${{ input.verbosity }}
-        config_file: ${{ input.config_file }}
-        github_token: ${{ input.github_token }}
+        verbosity: ${{ inputs.verbosity }}
+        config_file: ${{ inputs.config_file }}
+        github_token: ${{ inputs.github_token }}
         tag: ${{ steps.semantic-release-version.outputs.tag }}
